@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mapa interactivo educativo sobre territorio, biodiversidad, voces y gestión del riesgo del Jarillón de Cali.">
+  <title>El Jarillón de Cali | Territorio y gestión del riesgo</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="El Jarillón de Cali, inicio">
+      <img src="assets/mascota-jarillon.svg" alt="" class="brand-mascot">
+      <span><strong>EL JARILLÓN</strong><small>DE CALI</small></span>
+    </a>
+    <div class="heading">
+      <p class="eyebrow">VOCES, TERRITORIO Y GESTIÓN DEL RIESGO</p>
+      <h1>El Jarillón de Cali</h1>
+      <p class="subtitle">Mapa interactivo de territorio y riesgo</p>
+    </div>
+    <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="sidebar">☰ <span>Explorar mapa</span></button>
+  </header>
+
+  <main class="layout">
+    <aside id="sidebar" class="sidebar">
+      <section class="intro-card">
+        <img src="assets/mascota-jarillon.svg" alt="Personaje ilustrado de El Jarillón" class="mascot-large">
+        <div>
+          <p class="eyebrow">UN TERRITORIO QUE CUENTA</p>
+          <h2>El río, la gente y sus historias</h2>
+          <p>Explora los puntos del mapa para conocer relatos, biodiversidad y temas relacionados con la gestión del riesgo.</p>
+        </div>
+      </section>
+
+      <section class="side-section">
+        <h3>Capas del mapa</h3>
+        <label class="toggle-row"><input type="checkbox" id="riskToggle" checked> <span class="swatch risk"></span> Zona de riesgo (referencial)</label>
+        <label class="toggle-row"><input type="checkbox" id="riverToggle" checked> <span class="swatch river"></span> Río Cauca</label>
+        <label class="toggle-row"><input type="checkbox" id="storiesToggle" checked> <span class="swatch story"></span> Voces e historias</label>
+        <label class="toggle-row"><input type="checkbox" id="bioToggle" checked> <span class="swatch bio"></span> Biodiversidad</label>
+      </section>
+
+      <section class="side-section">
+        <h3>Historias y voces</h3>
+        <p class="section-note">Selecciona una historia para ubicarla en el mapa.</p>
+        <div id="storyList" class="story-list"></div>
+      </section>
+
+      <section class="side-section legend">
+        <h3>Lectura del riesgo</h3>
+        <div class="legend-item"><span class="legend-box critical"></span><span><strong>Riesgo crítico</strong><small>Área ilustrativa para el prototipo</small></span></div>
+        <div class="legend-item"><span class="legend-box review"></span><span><strong>Área por revisar</strong><small>Validar con fuentes oficiales</small></span></div>
+        <p class="disclaimer">Importante: las zonas dibujadas son demostrativas, no representan una delimitación oficial ni deben usarse para tomar decisiones de seguridad.</p>
+      </section>
+      <footer class="sidebar-footer">Proyecto educativo · Cali, Colombia</footer>
+    </aside>
+
+    <section class="map-panel" aria-label="Mapa interactivo del Jarillón de Cali">
+      <div class="map-heading">
+        <div><span class="live-dot"></span><strong>Mapa de territorio y gestión del riesgo</strong></div>
+        <span id="visibleCount">4 puntos destacados</span>
+      </div>
+      <div id="map"></div>
+      <div class="map-caption"><span>← Selecciona un marcador para abrir su ficha</span><span>Cartografía base: OpenStreetMap</span></div>
+      <article id="detailPanel" class="detail-panel">
+        <button id="closeDetail" class="close-detail" aria-label="Cerrar ficha">×</button>
+        <p class="eyebrow" id="detailCategory">PUNTO DESTACADO</p>
+        <h2 id="detailTitle">Explora el territorio</h2>
+        <p id="detailText">Selecciona un marcador del mapa o una historia del panel para conocer más.</p>
+        <p class="source-line" id="detailSource"></p>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

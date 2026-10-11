@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" role="img" aria-label="Personaje ilustrado inspirado en el paisaje del Jarillón">
+  <path d="M80 12 C55 15 35 34 33 62 C15 77 18 108 35 123 C39 149 58 166 82 169 C108 169 126 151 129 128 C146 109 144 80 127 63 C124 34 104 15 80 12Z" fill="#dce8a2" stroke="#174d3b" stroke-width="5"/>
+  <path d="M36 72 C18 58 13 44 20 34 C37 40 48 52 50 67" fill="#6c9c46" stroke="#174d3b" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M122 70 C142 55 146 42 139 32 C123 39 113 52 111 66" fill="#6c9c46" stroke="#174d3b" stroke-width="4" stroke-linejoin="round"/>
+  <ellipse cx="62" cy="81" rx="7" ry="10" fill="#17382e"/><ellipse cx="98" cy="81" rx="7" ry="10" fill="#17382e"/>
+  <circle cx="64" cy="78" r="2.5" fill="#fff"/><circle cx="100" cy="78" r="2.5" fill="#fff"/>
+  <path d="M70 103 Q80 111 91 102" fill="none" stroke="#17382e" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="80" cy="132" rx="38" ry="22" fill="#6c9c46" stroke="#174d3b" stroke-width="4"/>
+  <path d="M52 130 Q80 145 108 130" fill="none" stroke="#dce8a2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M52 155 L46 172 M108 155 L114 172" stroke="#174d3b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M60 30 Q80 19 100 30" fill="none" stroke="#fffdf7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M18 178 Q80 160 142 178" fill="none" stroke="#e46d43" stroke-width="5" stroke-linecap="round"/>
+</svg>
